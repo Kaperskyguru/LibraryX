@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="libraryx.ui.listMember.List_MemberController">
+    <stylesheets>
+        <URL value="@list_member.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tableViewCol" prefHeight="400.0" prefWidth="600.0">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <columns>
+            <TableColumn fx:id="nameCol" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="IDCol" prefWidth="75.0" text="Member ID" />
+            <TableColumn fx:id="mobileCol" prefWidth="75.0" text="Mobile" />
+            <TableColumn fx:id="email" prefWidth="75.0" text="Email" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

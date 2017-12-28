@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="254.0" prefWidth="392.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraryx.settings.SettingsController">
+   <children>
+      <VBox prefHeight="254.0" prefWidth="392.0" stylesheets="@../ui/addBook/addBook.css">
+         <children>
+            <JFXTextField fx:id="txtnDaysWithoutFine" labelFloat="true" promptText="No. of days member can keep book without fine">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="txtFinePerDay" labelFloat="true" layoutX="20.0" layoutY="30.0" promptText="Fine Per Day">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="txtUser" labelFloat="true" layoutX="10.0" layoutY="55.0" promptText="Username">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="txtPass" labelFloat="true" layoutX="20.0" layoutY="30.0" promptText="Password">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <HBox prefHeight="45.0" prefWidth="250.0" stylesheets="@../ui/addBook/addBook.css">
+               <children>
+                  <JFXButton fx:id="btnSaveSettings" onAction="#loadSettings" prefHeight="43.0" prefWidth="250.0" stylesheets="@../ui/addBook/addBook.css" text="Save" />
+                  <JFXButton fx:id="cancelButton" layoutX="10.0" layoutY="10.0" onAction="#cancel" prefHeight="43.0" prefWidth="250.0" stylesheets="@../ui/addBook/addBook.css" text="Cancel" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../ui/addMember/add_member.css" />
+   </stylesheets>
+</AnchorPane>
